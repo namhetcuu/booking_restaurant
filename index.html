@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nha Hang Luu Nam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/javascript/main.js" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="header-app">
+        <img
+          src="\assets\img\npd-rs-low-resolution-logo-white-on-black-background.png"
+          alt="logo app"
+          class="header-app__logo-name"
+        />
+        <ul class="navbar-app__list">
+          <li class="navbar-app__item">
+            <a href="index.html" class="navbar-app__item-link">
+              <i class="navbar-app__item-icon fa-solid fa-house"></i>
+              Trang chủ
+            </a>
+          </li>
+          <li class="navbar-app__item">
+            <a href="food.html" class="navbar-app__item-link"> Món ăn </a>
+          </li>
+          <li class="navbar-app__item">
+            <a href="drinks.html" class="navbar-app__item-link"> Món Phụ </a>
+          </li>
+          <li class="navbar-app__item">
+            <a href="booking.html" class="navbar-app__item-link"> Đặt bàn </a>
+          </li>
+          <li class="navbar-app__item">
+            <a href="Contact.html" class="navbar-app__item-link"> Liên hệ </a>
+          </li>
+          <li class="navbar-app__item">
+            <a href="infor.html" class="navbar-app__item-link"> Giới thiệu </a>
+          </li>
+          <!-- login  -->
+          <form class="auth-form_login" id="login">
+            <div class="auth-form__container">
+              <h1 class="auth-form__title">Tài Khoản Của Tôi</h1>
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Nhập Email của bạn"
+                  />
+                </div>
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    class="auth-form__input"
+                    placeholder="Nhập mật khẩu của bạn"
+                  />
+                </div>
+              </div>
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-fogot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-seperate"></span>
+                <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+              </div>
+              <div class="auth-form__controls">
+                <span
+                  class="auth-form__controls-btn auth-form__controls-login"
+                  id="btn_login"
+                  >Đăng Nhập
+                </span>
+                <span
+                  class="auth-form__controls-btn auth-form__controls-register"
+                  id="btn_register"
+                  >Đăng ký</span
+                >
+              </div>
+            </div>
+          </form>
+          <!--register  -->
+          <form class="auth-form_register" id="register">
+            <div class="auth-form__container">
+              <h1 class="auth-form__title">Tài Khoản Của Tôi</h1>
+
+              <div class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    class="auth-form__input"
+                    placeholder="Nhập Email của bạn"
+                  />
+                </div>
+
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    class="auth-form__input"
+                    placeholder="Nhập mật khẩu của bạn"
+                  />
+                </div>
+
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    class="auth-form__input"
+                    placeholder="Nhập lại mật khẩu"
+                  />
+                </div>
+              </div>
+
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  đồng ý với chúng tôi về
+                  <a href="" class="auth-form__text-link"
+                    >Điều khoảng dịch vụ</a
+                  >
+                  &
+                  <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                </p>
+              </div>
+
+              <div class="auth-form__controls">
+                <button class="auth-form__controls-btn btn_register">
+                  Đăng Ký
+                </button>
+              </div>
+            </div>
+          </form>
+        </ul>
+
+        <label
+          for="header-app-checkbox"
+          class="header-app__index__container-img"
+        >
+          <i class="header-app__index-icon fa-solid fa-bars"></i>
+        </label>
+
+        <input
+          type="checkbox"
+          name=""
+          hidden
+          class="header__input-check"
+          id="header-app-checkbox"
+        />
+
+        <label for="header-app-checkbox" class="header-app__overlay"></label>
+
+        <i class="fa-solid fa-user account" id="account"></i>
+        <!--Nay la reponsive no se hien ra-->
+        <div class="header-app__container-content">
+          <ul class="header-app__index__list">
+            <li class="navbar-app__index__item">
+              <a href="index.html" class="navbar-app__index__item-link">
+                Trang chủ
+              </a>
+            </li>
+
+            <li class="navbar-app__index__item">
+              <a href="food.html" class="navbar-app__index__item-link">
+                Món ăn
+              </a>
+            </li>
+
+            <li class="navbar-app__index__item">
+              <a href="drinks.html" class="navbar-app__index__item-link">
+                Nước uống
+              </a>
+            </li>
+
+            <li class="navbar-app__index__item">
+              <a href="booking.html" class="navbar-app__index__item-link">
+                Đặt bàn
+              </a>
+            </li>
+
+            <li class="navbar-app__index__item">
+              <a href="Contact.html" class="navbar-app__index__item-link">
+                Liên hệ
+              </a>
+            </li>
+
+            <li class="navbar-app__index__item">
+              <a href="infor.html" class="navbar-app__index__item-link">
+                Giới thiệu
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="header-img"
+        style="
+          background-image: url(https://vnn-imgs-a1.vgcloud.vn/znews-photo.zadn.vn/w1024/Uploaded/sgogtn/2020_01_02/36ca5728591ebbfd4a8014e9e940df7c.jpg);
+        "
+      >
+        <a href="#nam" class="btn btn-primary">Menu</a>
+      </div>
+
+      <div class="body">
+        <div class="maxim">
+          <h2 class="maxim-dream">
+            HÃY TẬN HƯỞNG NHỮNG PHÚT GIÂY TRẢI NGHIỆM TUYỆT VỜI <br />
+            BÊN CẠNH NHỮNG MÓN ĂN MÀ BẠN THÍCH
+          </h2>
+          <span class="maxim-lable"
+            >Sự hài lòng của bạn &hearts; là niềm tự hào chúng tôi
+          </span>
+        </div>
+
+        <div class="body-page">
+          <div class="body-page-wrap">
+            <img
+              src="https://sesan.com.vn/wp-content/uploads/2020/06/IMG_0397.jpg"
+              alt="anh nha hang"
+              class="body-page-wrap__img"
+            />
+            <div class="body-page-wrap__content">
+              <h2 class="body-page-wrap__content-name">NHÀ HÀNG NPD HUẾ</h2>
+              <span class="body-page-wrap__content-address"
+                >136 Hùng Vương,TP.Huế</span
+              >
+              <br />
+              <span class="body-page-wrap__content-introduce"
+                >Nhà hàng NPD Huế là sự kết hợp giữa phong cách cổ xưa và hiện
+                đại, được tái hiện thông qua từng kiến trúc...</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="body-page">
+          <div class="body-page-wrap">
+            <img
+              src="https://dquahotel.com/FileStorage/Article/Thumbnail/dqua_433.jpg"
+              alt="anh nha hang"
+              class="body-page-wrap__img"
+            />
+            <div class="body-page-wrap__content">
+              <h2 class="body-page-wrap__content-name">
+                NHÀ HÀNG NPD Quảng Nam
+              </h2>
+              <span class="body-page-wrap__content-address">
+                Xã Tam Phước, Huyện Phú Ninh, Tỉnh Quảng Nam</span
+              >
+              <br />
+              <span class="body-page-wrap__content-introduce"
+                >Tọa lạc tại tỉnh Quảng Nam, sự kết hợp hoàn hảo giữa ẩm thực và
+                nghệ thuật được gói gọn trong từng kiến trúc và món ăn mà bạn có
+                thể tìm thấy được ở NPD RS...</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="body-center">
+          <div
+            class="body-center-img"
+            style="
+              background-image: url(https://sesan.com.vn/wp-content/uploads/2020/06/Sesan-18-scaled.jpg);
+            "
+          >
+            <h2 class="body-center-lable">
+              Nơi thưởng thức ẩm thực <br />
+              <span class="body-center-lable-last"> Tuyệt Vời</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="body-center__bottom">
+          <div class="grid">
+            <div class="row" id="nam">
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/DSC04514-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">SẢNH TIỆC HỘI NGHỊ</h2>
+                  <span class="body-bottom-lable"> Nhà hàng NPD Huế </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/DSC04749-copy-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">TUM BUMBAI</h2>
+                  <span class="body-bottom-lable">
+                    Nhà hàng NPD Quảng Nam
+                  </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/IMG_0398-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">HỆ THỐNG PHÒNG LẠNH</h2>
+                  <span class="body-bottom-lable"> Nhà hàng NPD Huế </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/IMG_0409-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">KHÔNG GIAN SÂN VƯỜN</h2>
+                  <span class="body-bottom-lable"> Nhà hàng NPD Huế </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/sesan2-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">SẢNH TIỆC HỘI NGHỊ</h2>
+                  <span class="body-bottom-lable">
+                    Nhà hàng NPD Quảng Nam
+                  </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/IMG_0415-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">KHU VỰC NHÀ GỖ</h2>
+                  <span class="body-bottom-lable"> Nhà hàng NPD Huế </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/DSC04145-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">ẤM CÚNG</h2>
+                  <span class="body-bottom-lable">
+                    Nhà hàng NPD Quảng Nam
+                  </span>
+                </div>
+              </div>
+
+              <div class="col c-12 m-6 l-3">
+                <div class="body-bottom">
+                  <img
+                    src="https://sesan.com.vn/wp-content/uploads/2014/07/DSC04706-400x400.jpg"
+                    alt="anh nha hang"
+                    class="body-bottom-img"
+                  />
+                  <h2 class="body-bottom__title">SÂN VƯỜN BIỆT THỰ</h2>
+                  <span class="body-bottom-lable"> Nhà hàng NPD Huế </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="col-1 content-columns">
+          <h2>Thông tin liên hệ:</h2>
+          <ul>
+            <li>
+              <i class="fa-solid ti-location-pin"></i>VKU, Đại học Việt Hàn
+            </li>
+            <li><i class="fa-solid ti-microphone"></i>0965399143</li>
+            <li>
+              <i class="fa-solid ti-comments-smiley"></i>namdp.22itb@gmail.com
+            </li>
+            <li><i class="fa-solid ti-id-badge"></i>www.facebook.com</li>
+          </ul>
+        </div>
+
+        <div class="col-2 content-columns">
+          <h2>Bài viết gần đây:</h2>
+          <ul>
+            <li><a href="">Thông báo khai trương 01/07/2023</a></li>
+            <li><a href="">Nhà hàng view sân thượng</a></li>
+            <li><a href="">Nhà hàng view biển</a></li>
+            <li><a href="">Xu hướng tiệc tất niên 2023</a></li>
+            <li><a href="">Hướng dẫn thanh toán trực tuyến ?</a></li>
+          </ul>
+        </div>
+
+        <div class="col-3 content-columns">
+          <h2>Tổng Quan</h2>
+          <ul>
+            <li>Nguyễn Thành Lưu(Owner)</li>
+            <li>Đàm Phương Nam(Admin)</li>
+          </ul>
+        </div>
+
+        <div class="col-4 content-columns">
+          <h2>Star Rating.</h2>
+          <div class="col-4-content">
+            <p>.....................................</p>
+            <div class="search-input">
+              <input type="email" placeholder="Email" />
+              <input type="button" class="btn" value="Subscribe" />
+            </div>
+            <div class="social-links">
+              <a href=""><i class="fab ti-facebook"></i></a>
+              <a href=""><i class="fab ti-twitter"></i></a>
+              <a href=""><i class="fab ti-pinterest-alt"></i></a>
+              <a href=""><i class="fab ti-youtube"></i></a>
+              <a href=""><i class="fab ti-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="underline">
+        <span></span>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/javascript/main.js"></script>
+  </body>
+</html>
